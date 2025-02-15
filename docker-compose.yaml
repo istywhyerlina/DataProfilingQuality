@@ -13,7 +13,7 @@ services:
       - ${SRC_POSTGRES_PORT}:5432
     volumes:
       - ./source_data:/docker-entrypoint-initdb.d
-      - source-volume:/var/lib/postgresql/data
+      - source-vol:/var/lib/postgresql/data
 
 volumes:
-  source-volume:
+  source-vol:

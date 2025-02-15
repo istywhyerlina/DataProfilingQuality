@@ -1,0 +1,117 @@
+{
+    "person_in_charge": "isty",
+    "date_quality": "2025-02-15 18:10:22.606942",
+    "result": {
+        "products": {
+            "missing_value": {
+                "product_id": 0.0,
+                "product_name": 0.0,
+                "category": 0.0,
+                "unit_price": 0.0,
+                "cost_price": 0.0,
+                "in_stock": 0.0,
+                "created_at": 0.0
+            },
+            "num_val": {
+                "unit_price": false,
+                "cost_price": false
+            },
+            "neg_val": {
+                "unit_price": "Not a Numeric",
+                "cost_price": "Not a Numeric"
+            }
+        },
+        "inventory_tracking": {
+            "missing_value": {
+                "tracking_id": 0.0,
+                "product_id": 0.0,
+                "quantity_change": 0.0,
+                "change_date": 0.0,
+                "reason": 0.0,
+                "created_at": 0.0
+            },
+            "date_val": {
+                "change_date": false
+            },
+            "num_val": {
+                "quantity_change": true
+            },
+            "neg_val": {
+                "quantity_change": false
+            }
+        },
+        "orders": {
+            "missing_value": {
+                "order_id": 0.0,
+                "employee_id": 0.0,
+                "customer_id": 0.25,
+                "order_date": 0.0,
+                "total_amount": 0.0,
+                "payment_method": 0.0,
+                "order_status": 0.0,
+                "created_at": 0.0
+            },
+            "date_val": {
+                "order_date": true
+            },
+            "num_val": {
+                "total_amount": true
+            },
+            "neg_val": {
+                "total_amount": false
+            }
+        },
+        "customers": {
+            "missing_value": {
+                "customer_id": 0.0,
+                "first_name": 0.0,
+                "last_name": 0.0,
+                "email": 0.0,
+                "phone": 0.02,
+                "loyalty_points": 0.0,
+                "created_at": 0.0
+            },
+            "num_val": {
+                "loyalty_points": true
+            },
+            "neg_val": {
+                "loyalty_points": true
+            }
+        },
+        "employees": {
+            "missing_value": {
+                "employee_id": 0.0,
+                "first_name": 0.0,
+                "last_name": 0.0,
+                "hire_date": 0.0,
+                "role": 0.0,
+                "email": 0.0,
+                "created_at": 0.0
+            },
+            "date_val": {
+                "hire_date": true
+            }
+        },
+        "order_details": {
+            "missing_value": {
+                "order_detail_id": 0.0,
+                "order_id": 0.0,
+                "product_id": 0.0,
+                "quantity": 0.0,
+                "unit_price": 0.0,
+                "subtotal": 0.0,
+                "created_at": 0.0
+            },
+            "num_val": {
+                "unit_price": true,
+                "quantity": true,
+                "subtotal": true
+            },
+            "neg_val": {
+                "unit_price": false,
+                "quantity": false,
+                "subtotal": false
+            }
+        }
+    }
+}
